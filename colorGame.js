@@ -21,8 +21,10 @@ function modeButtons() {
         mode[i].addEventListener('click', function () {
             mode[0].classList.remove('selected');
             mode[1].classList.remove('selected');
+            mode[2].classList.remove('selected');
             this.classList.add('selected');
             this.textContent === 'Easy' ? numSquares =3: numSquares =6;
+            this.textContent === 'Hard' ? numSquares =9: numSquares =6;
             reset();
         });
     }
